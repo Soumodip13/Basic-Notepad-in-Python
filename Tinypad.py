@@ -32,7 +32,7 @@ class TinyPad:
             pass
 
         self.__root.title("Untitled - TinyPad")
-        self.__root.wm_iconbitmap("face.ico")
+        self.__root.wm_iconbitmap("window.ico")
         screenWidth = self.__root.winfo_screenwidth()
         screenHeight = self.__root.winfo_screenheight()
 
@@ -46,9 +46,9 @@ class TinyPad:
 
         self.__thisTextArea.grid(sticky=N+E+S+W)
         self.__thisTextArea.configure(background='#282a36')
-        myFont = Font(family="Roboto", size=16, weight='normal')
+        myFont = Font(family="Consolas", size=16, weight='normal')
         self.__thisTextArea.configure(font=myFont)
-        self.__thisTextArea.configure(fg='#50fa7b')
+        self.__thisTextArea.configure(fg='#f8f8f2')
 
         self.__thisFileMenu.add_command(label="New", command=self.__newFile)
         self.__thisFileMenu.add_command(label="Open", command=self.__openFile)
